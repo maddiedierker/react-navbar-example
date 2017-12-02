@@ -3,3 +3,12 @@ body {
   padding: 0;
   font-family: 'Raleway', sans-serif;
 }
+
+.app {
+  display: flex;
+}
+
+.navbar-container {
+  min-height: 100vh;
+  background-color: lightgray;
+}
