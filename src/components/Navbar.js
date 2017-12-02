@@ -1,21 +1,10 @@
 import React, { Component } from 'react'
+import NavbarContent from './NavbarContent'
 import NavbarIcon from './NavbarIcon'
 
 export default class Navbar extends Component {
   state = {
     isOpen: true
-  }
-
-  renderNavbar = () => {
-    if (!this.state.isOpen) {
-      return null
-    }
-
-    return <div className="navbar">
-      <div className="navbar-link">Home</div>
-      <div className="navbar-link">About</div>
-      <div className="navbar-link">Contact</div>
-    </div>
   }
 
   toggleNavbar = () => {
@@ -26,7 +15,7 @@ export default class Navbar extends Component {
 
   render() {
     return <div className="navbar-container">
-      {this.renderNavbar()}
+      <NavbarContent isOpen={this.state.isOpen} />
       <div className="navbar-icon">
         <NavbarIcon
           isOpen={this.state.isOpen}

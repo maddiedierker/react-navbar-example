@@ -6,7 +6,8 @@
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
     "react-icons": "^2.2.7",
-    "react-scripts": "1.0.17"
+    "react-scripts": "1.0.17",
+    "react-transition-group": "^2.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
