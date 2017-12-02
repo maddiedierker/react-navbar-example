@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import NavbarIcon from './NavbarIcon'
 
 export default class Navbar extends Component {
   state = {
@@ -17,9 +18,21 @@ export default class Navbar extends Component {
     </div>
   }
 
+  toggleNavbar = () => {
+    this.setState(prevState => ({
+      isOpen: !prevState.isOpen
+    }))
+  }
+
   render() {
     return <div className="navbar-container">
       {this.renderNavbar()}
+      <div className="navbar-icon">
+        <NavbarIcon
+          isOpen={this.state.isOpen}
+          handleClick={this.toggleNavbar}
+        />
+      </div>
     </div>
   }
 }

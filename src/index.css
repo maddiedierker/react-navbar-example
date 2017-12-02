@@ -10,12 +10,14 @@ body {
 
 .navbar-container {
   min-height: 100vh;
-  background-color: lightgray;
+  display: flex;
 }
 
 .navbar {
+  height: 100%;
   width: 200px;
   padding-top: 25px;
+  background-color: lightgray;
 }
 
 .navbar-link {
@@ -24,6 +26,12 @@ body {
 .navbar-link:hover {
   border-right: 5px solid dimgray;
   background-color: gainsboro;
+}
+
+.navbar-icon {
+  padding-top: 10px;
+  padding-left: 10px;
+  color: dimgray;
 }
 
 .content-container {
