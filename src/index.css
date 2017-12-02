@@ -12,3 +12,16 @@ body {
   min-height: 100vh;
   background-color: lightgray;
 }
+
+.navbar {
+  width: 200px;
+  padding-top: 25px;
+}
+
+.navbar-link {
+  padding: 10px;
+}
+.navbar-link:hover {
+  border-right: 5px solid dimgray;
+  background-color: gainsboro;
+}
